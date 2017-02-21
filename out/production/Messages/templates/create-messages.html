@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+</head>
+<body>Hello {{name}}
+
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Write a message" name="messageboard" />
+    <button type="submit">Submit</button>
+</form>
+
+{{#messageboard}}
+{{comments}}
+{{/messageboard}}
+</body>
+</html>
+
+
+
+
